@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Layout from '../components/Layout';
 
-const Klient = () => {
+const Client = () => {
   const [code, setCode] = useState('');
   const [responseMessage, setResponseMessage] = useState('');
   const [responseUrl, setResponseUrl] = useState('');
@@ -33,8 +33,8 @@ const Klient = () => {
 
   return (
     <Layout>
-      <h1>Klient</h1>
-      <p>Strefa klienta. Proszę wpisać swój kod dostępu.</p>
+      <h1>Client</h1>
+      <p>Strefa Clienta. Proszę wpisać swój kod dostępu.</p>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -50,4 +50,4 @@ const Klient = () => {
   );
 };
 
-export default Klient;
+export default Client;

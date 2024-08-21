@@ -4,15 +4,19 @@ import styles from '../styles/Navbar.module.css';
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
+      <div className={styles.logo}>LB</div>
       <ul className={styles.navList}>
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/art">art</Link>
         </li>
         <li>
-          <Link href="/portfolio">Portfolio</Link>
+          <Link href="/about">about</Link>
         </li>
         <li>
-          <Link href="/klient">Klient</Link>
+          <Link href="/contact">contact</Link>
+        </li>
+        <li>
+          <Link href="/client">for client</Link>
         </li>
       </ul>
     </nav>

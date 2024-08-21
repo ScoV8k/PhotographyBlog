@@ -1,0 +1,28 @@
+.contactContent {
+    max-width: 600px;
+    margin: auto;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+  }
+  
+  .h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .p {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 12px;
+    color: #888;
+    text-align: left;
+    width: 100%;
+    padding-left: 220px;
+    box-sizing: border-box;
+  }
+  

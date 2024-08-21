@@ -1,12 +1,12 @@
 import Layout from '../components/Layout';
 
-const Portfolio = () => {
+const Art = () => {
   return (
     <Layout>
-      <h1>Portfolio</h1>
+      <h1>Art</h1>
       <p>Twoje prace fotograficzne pojawią się tutaj.</p>
     </Layout>
   );
 };
 
-export default Portfolio;
+export default Art;
