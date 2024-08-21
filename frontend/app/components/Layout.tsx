@@ -10,7 +10,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <div className={styles.container}>
       <Navbar />
-      <main className={styles.main}>{children}</main>
+      <main className={styles.mainContent}>{children}</main>
     </div>
   );
 };

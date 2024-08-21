@@ -1,9 +1,16 @@
+/* Layout.module.css */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  display: flex;
+  height: 100vh;
 }
 
-.main {
-  padding: 20px 0;
+.mainContent {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Dopasowanie do góry strony */
+  flex-direction: column;
+  background-color: #ffffff;
+  margin-left: 200px; /* Odstęp od lewego navbaru */
 }
