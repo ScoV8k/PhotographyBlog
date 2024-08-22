@@ -38,7 +38,7 @@ jobs:
 
       - name: List files for debugging
         run: |
-          ls -R deploy-path/frontend/
+          ls -R frontend/
 
   deploy:
     runs-on: ubuntu-latest
