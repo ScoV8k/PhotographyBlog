@@ -64,4 +64,9 @@ jobs:
         with:
           app-name: 'mtu'
           slot-name: 'Production'
-          package: frontend/.  # Wskazuje na katalog, gdzie są zbudowane pliki aplikacji
+          package: deploy-path/frontend/.  # Wskazuje na katalog, gdzie są zbudowane pliki aplikacji
+
+      - name: List files for debugging
+        run: |
+          ls -R deploy-path/frontend/
+
