@@ -61,5 +61,5 @@ jobs:
         with:
           app-name: 'mtu'
           slot-name: 'Production'
-          package: .
+          package: frontend/
           
