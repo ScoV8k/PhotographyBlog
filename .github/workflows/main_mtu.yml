@@ -36,6 +36,10 @@ jobs:
             frontend/next.config.js
           if-no-files-found: error
 
+        - name: List files for debugging
+          run: |
+            ls -R deploy-path/frontend/
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
@@ -64,9 +68,5 @@ jobs:
         with:
           app-name: 'mtu'
           slot-name: 'Production'
-          package: deploy-path/frontend/.  # Wskazuje na katalog, gdzie są zbudowane pliki aplikacji
-
-      - name: List files for debugging
-        run: |
-          ls -R deploy-path/frontend/
+          package: frontend/.  # Wskazuje na katalog, gdzie są zbudowane pliki aplikacji
 
