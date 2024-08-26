@@ -54,6 +54,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: node-app
+          path: ./node-app
       
       - name: Login to Azure
         uses: azure/login@v2
@@ -62,11 +63,16 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_D7D60F3D65C04F3AB57DF860827EE897 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_1704D26450D84C7A861EAA7BC4919C5F }}
 
+      - name: Debugging - List files after downloading artifact
+        run: |
+          ls -R
+
+
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
           app-name: 'mtu'
           slot-name: 'Production'
-          package: frontend/  # Wskazuje na katalog, gdzie są zbudowane pliki aplikacji
+          package: ./node-app  # Wskazuje na katalog, gdzie są zbudowane pliki aplikacji
 
