@@ -68,5 +68,5 @@ jobs:
         with:
           app-name: 'mtu'
           slot-name: 'Production'
-          package: frontend/.  # Wskazuje na katalog, gdzie są zbudowane pliki aplikacji
+          package: frontend/  # Wskazuje na katalog, gdzie są zbudowane pliki aplikacji
 
